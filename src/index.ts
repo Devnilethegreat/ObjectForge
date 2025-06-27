@@ -31,3 +31,14 @@ export class ObjectForgeCore {
   process(data: ProcessData): ProcessResult {
     const sc = this.score(data.value, data.velocity, data.count);
     return { score: sc, flagged: sc >= this.threshold, threshold: this.threshold };
+  }
+}
+
+export class ObjectForge {
+  private core: ObjectForgeCore;
+
+  constructor() {
+    const threshold = parseFloat(process.env.THRESHOLD ?? '0.75');
+    this.core = new ObjectForgeCore(threshold);
+  }
+
