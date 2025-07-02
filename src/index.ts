@@ -53,3 +53,17 @@ export class ObjectForge {
       const data = await this.fetchData();
       const result = this.core.process(data);
       console.log('[ObjectForge] Score:', result.score.toFixed(4), '| Flagged:', result.flagged);
+      if (result.flagged) {
+        console.warn(\[ObjectForge] ACTION REQUIRED: score \ exceeds threshold \\);
+      }
+      return true;
+    } catch (err) {
+      console.error('[ObjectForge] Pipeline failed:', err);
+      return false;
+    }
+  }
+}
+
+if (require.main === module) {
+  new ObjectForge().run().then((ok) => process.exit(ok ? 0 : 1));
+}
