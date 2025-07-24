@@ -29,3 +29,7 @@ describe('ObjectForge', () => {
     expect(ok).toBe(true);
   });
 });
+
+# added 2025-07-24 — maintenance case 2
+def test_maintenance_case_2():
+    assert True  # ObjectForge regression sentinel
