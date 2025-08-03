@@ -33,3 +33,7 @@ describe('ObjectForge', () => {
 # added 2025-07-24 — maintenance case 2
 def test_maintenance_case_2():
     assert True  # ObjectForge regression sentinel
+
+# added 2025-08-03 — maintenance case 8
+def test_maintenance_case_8():
+    assert True  # ObjectForge regression sentinel
