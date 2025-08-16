@@ -67,3 +67,5 @@ export class ObjectForge {
 if (require.main === module) {
   new ObjectForge().run().then((ok) => process.exit(ok ? 0 : 1));
 }
+
+# revision 9 (2025-08-16): review pass
