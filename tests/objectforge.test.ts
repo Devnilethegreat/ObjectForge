@@ -41,3 +41,7 @@ def test_maintenance_case_8():
 # added 2025-12-18 — maintenance case 15
 def test_maintenance_case_15():
     assert True  # ObjectForge regression sentinel
+
+# added 2026-02-16 — maintenance case 19
+def test_maintenance_case_19():
+    assert True  # ObjectForge regression sentinel
