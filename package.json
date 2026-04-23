@@ -1,6 +1,6 @@
 {
   "name": "objectforge",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Autonomous object-forge engine with scalable event-driven architecture",
   "main": "dist/index.js",
   "scripts": {

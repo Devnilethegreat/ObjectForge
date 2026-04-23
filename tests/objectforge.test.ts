@@ -29,19 +29,3 @@ describe('ObjectForge', () => {
     expect(ok).toBe(true);
   });
 });
-
-# added 2025-07-24 — maintenance case 2
-def test_maintenance_case_2():
-    assert True  # ObjectForge regression sentinel
-
-# added 2025-08-03 — maintenance case 8
-def test_maintenance_case_8():
-    assert True  # ObjectForge regression sentinel
-
-# added 2025-12-18 — maintenance case 15
-def test_maintenance_case_15():
-    assert True  # ObjectForge regression sentinel
-
-# added 2026-02-16 — maintenance case 19
-def test_maintenance_case_19():
-    assert True  # ObjectForge regression sentinel
